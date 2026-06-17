@@ -215,21 +215,24 @@ with col2:
                 matched_prop,
                 details
             )
+
+        # Store in session state for proposal preview section below
+        st.session_state.pipeline_run["proposal_md"] = proposal_md
             
         source = "Gemini 1.5 Flash API" if used_api else "High-Fidelity Local Simulator"
-        st.success(f"Proposal draft successfully generated via {source}!")
+        st.success(f"✅ Proposal draft generated via **{source}**!")
         
-        # Save output in local output directory
+        # Try to save locally (works on local machine, skipped gracefully on cloud)
         client_clean = details["company_name"].lower().replace(" ", "_")
         md_filename = f"proposal_{client_clean}.md"
-        output_dir = os.path.join(BASE_DIR, "output")
-        os.makedirs(output_dir, exist_ok=True)
-        md_path = os.path.join(output_dir, md_filename)
-        
-        with open(md_path, "w", encoding="utf-8") as f:
-            f.write(proposal_md)
-            
-        st.markdown(f"Saved locally to: `{md_path}`")
+        try:
+            output_dir = os.path.join(BASE_DIR, "output")
+            os.makedirs(output_dir, exist_ok=True)
+            md_path = os.path.join(output_dir, md_filename)
+            with open(md_path, "w", encoding="utf-8") as f:
+                f.write(proposal_md)
+        except OSError:
+            pass  # Read-only filesystem on Streamlit Cloud — download button still works
         
         # Download button
         st.download_button(
@@ -242,8 +245,8 @@ with col2:
     else:
         st.markdown("<p style='color: #6B7280; font-style: italic;'>Submit the client request on the left to see the ingestion, matching, and synthesis results here.</p>", unsafe_allow_html=True)
 
-# Display Generated Proposal Preview
-if "pipeline_run" in st.session_state and "proposal_md" in locals():
-    st.markdown('<div class="section-header">4. Live Proposal Preview</div>', unsafe_allow_html=True)
+# Display Generated Proposal Preview below both columns
+if "pipeline_run" in st.session_state and "proposal_md" in st.session_state.pipeline_run:
     st.markdown("---")
-    st.markdown(proposal_md)
+    st.markdown('<div class="section-header">4. Live Proposal Preview</div>', unsafe_allow_html=True)
+    st.markdown(st.session_state.pipeline_run["proposal_md"])

@@ -2,10 +2,13 @@ import os
 import json
 import re
 from typing import Dict, Any, List, Tuple
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# python-dotenv is optional — on Streamlit Cloud, secrets are injected as env vars directly
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 class ProposalEngine:
     def __init__(self, proposals_db_path: str, emails_db_path: str):
