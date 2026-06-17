@@ -1,0 +1,29 @@
+[
+  {
+    "id": "email_swiftstyles_01",
+    "subject": "Inquiry: Custom E-commerce Storefront & Mobile App",
+    "sender": "sarah.jenkins@swiftstyles.com",
+    "sender_name": "Sarah Jenkins",
+    "company": "SwiftStyles Retail",
+    "date": "2026-06-15",
+    "body": "Hi Sales Team,\n\nWe are looking to build a custom storefront for our fashion brand. We want to migrate our backend database to Shopify, but we need a highly customized frontend (Next.js) for SEO, custom visual layouts, and sub-second loading speeds, along with a cross-platform iOS & Android app built using React Native.\n\nWe will need user profiles, product search, cart, checkout with Stripe, and direct integration with our Salesforce CRM to sync order records.\n\nOur budget is around $75k to $90k, and we hope to launch this in 4 months.\n\nLooking forward to hearing from you and receiving a proposal.\n\nBest,\n\nSarah Jenkins\nDirector of Technology, SwiftStyles Retail"
+  },
+  {
+    "id": "email_payguard_02",
+    "subject": "Infrastructure Migration & Security Compliance Inquiry",
+    "sender": "marcus.chen@payguard.io",
+    "sender_name": "Marcus Chen",
+    "company": "PayGuard Fintech",
+    "date": "2026-06-16",
+    "body": "Hello,\n\nPayGuard is a fintech startup. We are currently hosting our apps on local VMs and want to migrate everything to a secure AWS cloud infrastructure using Kubernetes (EKS) and Terraform. Security is a massive concern for us as we need to comply with SOC2 requirements.\n\nWe also need a fully automated CI/CD pipeline (preferably GitHub Actions) and a Prometheus/Grafana monitoring stack to alert us of any container issues.\n\nWe want to complete this migration in 2-3 months. Budget is roughly $45k-$55k.\n\nCan you send a proposal outlining your approach, timeline, and estimated resource pricing?\n\nThanks,\n\nMarcus Chen\nCTO, PayGuard Fintech"
+  },
+  {
+    "id": "email_globelink_03",
+    "subject": "Request for Proposal: Fleet Monitoring and Telematics Dashboard",
+    "sender": "d.kovacs@globelinklogistics.com",
+    "sender_name": "Daniel Kovacs",
+    "company": "GlobeLink Logistics",
+    "date": "2026-06-17",
+    "body": "Hi,\n\nGlobeLink operates a fleet of 500+ delivery trucks. We want to build a real-time IoT tracking platform that ingests GPS/telemetry data via MQTT, displays it on an interactive map using React/Leaflet, and alerts dispatchers when drivers go off-route.\n\nWe need a dashboard for dispatchers, SMS/email alert triggers for geofencing, and weekly analytics reports on driver idle times and route efficiency.\n\nWe expect a timeline of 5 months. Our budget is open but we'd like to see a detailed pricing breakdown.\n\nCould you share if you've done something similar and provide a draft proposal?\n\nSincerely,\n\nDaniel Kovacs\nVP of Operations, GlobeLink Logistics"
+  }
+]

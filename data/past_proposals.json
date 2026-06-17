@@ -1,0 +1,121 @@
+[
+  {
+    "id": "prop_ecommerce_01",
+    "title": "Custom E-Commerce Web & Mobile Application",
+    "category": "E-Commerce",
+    "client_industry": "Retail / Direct-to-Consumer (D2C)",
+    "tech_stack": ["React Native", "Next.js", "Node.js", "PostgreSQL", "Shopify API", "Stripe"],
+    "timeline_weeks": 16,
+    "cost_usd": 85000,
+    "scope": [
+      "Custom headless Next.js storefront for optimal SEO and sub-second loading speeds.",
+      "Cross-platform iOS and Android mobile app using React Native.",
+      "Shopify Plus integration for product catalog, checkout flow, and inventory synchronization.",
+      "Stripe payment gateway integration supporting standard credit cards, Apple Pay, and Google Pay.",
+      "User authentication, order history, wishlists, and customized loyalty program dashboard.",
+      "Admin analytics panel for tracking sales, visitor counts, and system health."
+    ],
+    "deliverables": [
+      "High-fidelity Figma mockups and interactive UI/UX wireframes.",
+      "Production-ready Next.js web storefront and React Native mobile application source code.",
+      "Secure backend APIs built on Node.js and PostgreSQL database schema.",
+      "Comprehensive API documentation and third-party integration mapping.",
+      "Automated testing suite and manual QA test verification logs.",
+      "Production deployment to AWS or Vercel and transfer of credentials."
+    ],
+    "resource_plan": [
+      {"role": "Project Manager", "count": 1, "involvement": "Part-Time"},
+      {"role": "UI/UX Designer", "count": 1, "involvement": "Full-Time (First 6 weeks)"},
+      {"role": "Lead Full-Stack Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "Front-End Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "QA Engineer", "count": 1, "involvement": "Part-Time"}
+    ]
+  },
+  {
+    "id": "prop_crm_02",
+    "title": "Salesforce CRM Integration & ERP Middleware Sync",
+    "category": "Enterprise Integrations",
+    "client_industry": "Manufacturing & Logistics",
+    "tech_stack": ["Salesforce API", "Python (FastAPI)", "AWS Lambda", "PostgreSQL", "Apache Kafka"],
+    "timeline_weeks": 12,
+    "cost_usd": 60000,
+    "scope": [
+      "Develop custom Python (FastAPI) middleware to broker communications between Salesforce CRM and legacy ERP.",
+      "Configure Apache Kafka event stream for real-time inventory adjustments and price syncs.",
+      "Implement Apex triggers and Salesforce flows to automate account and lead handoffs.",
+      "Construct a secure PostgreSQL audit logging system to record transaction failures and retry attempts.",
+      "Deploy middleware components as serverless AWS Lambda microservices for maximum scalability."
+    ],
+    "deliverables": [
+      "Detailed Data Mapping & System Architecture diagram.",
+      "Salesforce Apex Class code and customized Page Layout configurations.",
+      "Python Middleware codebase (hosted on GitHub) with full unit test coverage.",
+      "Grafana Monitoring dashboard showing queue lag and sync error rates.",
+      "User training guides and developer handoff documentation."
+    ],
+    "resource_plan": [
+      {"role": "Solution Architect", "count": 1, "involvement": "Part-Time"},
+      {"role": "Salesforce Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "Python Backend Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "QA Engineer", "count": 1, "involvement": "Part-Time"}
+    ]
+  },
+  {
+    "id": "prop_cloud_03",
+    "title": "AWS Cloud Migration, Security Hardening & CI/CD Pipeline",
+    "category": "DevOps & Cloud Infrastructure",
+    "client_industry": "Fintech / SaaS",
+    "tech_stack": ["AWS (EKS, RDS, S3)", "Terraform", "GitHub Actions", "Docker", "Prometheus", "Grafana", "WAF"],
+    "timeline_weeks": 10,
+    "cost_usd": 50000,
+    "scope": [
+      "Migrate existing bare-metal VM application architecture to AWS Elastic Kubernetes Service (EKS).",
+      "Draft infrastructure configurations purely as code using Terraform to enable multi-environment setups.",
+      "Construct robust, secure CI/CD pipelines in GitHub Actions for automatic staging and production deployments.",
+      "Implement Prometheus and Grafana for monitoring cluster memory, CPU, and request response cycles.",
+      "Establish strict AWS WAF rules and IAM policies to align with SOC2 compliance guidelines."
+    ],
+    "deliverables": [
+      "Terraform IAC scripts for AWS resources configuration.",
+      "GitHub Actions workflow files for build, test, and container deployment.",
+      "Kubernetes YAML configuration manifests and Helm charts.",
+      "Grafana alerting parameters and system dashboard templates.",
+      "SOC2 Infrastructure Readiness report detailing access logs and encryption mechanisms."
+    ],
+    "resource_plan": [
+      {"role": "Lead DevOps Architect", "count": 1, "involvement": "Full-Time"},
+      {"role": "Infrastructure Engineer", "count": 1, "involvement": "Full-Time"},
+      {"role": "Security Compliance Consultant", "count": 1, "involvement": "Part-Time"}
+    ]
+  },
+  {
+    "id": "prop_iot_04",
+    "title": "Real-Time IoT Fleet Telematics & Analytics Platform",
+    "category": "IoT & Telemetry",
+    "client_industry": "Transportation & Logistics",
+    "tech_stack": ["Python", "FastAPI", "React", "Leaflet.js", "MQTT Broker", "TimescaleDB", "AWS IoT Core"],
+    "timeline_weeks": 20,
+    "cost_usd": 110000,
+    "scope": [
+      "Deploy an MQTT broker (EMQX) to ingest telemetry data from 10,000+ simultaneous fleet devices.",
+      "Build a React-based dispatcher portal featuring real-time interactive mapping with Leaflet.js.",
+      "Create a geofencing engine that alerts administrators via SMS/Email using Twilio/Amazon SES.",
+      "Configure TimescaleDB database schema optimized for high-volume time-series location data.",
+      "Develop analytical reports modules using Pandas to compute vehicle efficiency, idle times, and route adherence."
+    ],
+    "deliverables": [
+      "IoT message schema design and integration specification doc.",
+      "React dispatcher frontend source code and Docker container setup.",
+      "FastAPI IoT ingestion backend server code.",
+      "Configured TimescaleDB database setup files.",
+      "Full load test evaluation showing broker stability under 12k concurrent connections."
+    ],
+    "resource_plan": [
+      {"role": "Project Manager", "count": 1, "involvement": "Part-Time"},
+      {"role": "IoT Backend Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "Frontend Developer", "count": 1, "involvement": "Full-Time"},
+      {"role": "QA Engineer", "count": 1, "involvement": "Full-Time"},
+      {"role": "DevOps Engineer", "count": 1, "involvement": "Part-Time"}
+    ]
+  }
+]
